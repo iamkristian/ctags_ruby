@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'ctags_ruby'
+
+CtagsRuby.generate
