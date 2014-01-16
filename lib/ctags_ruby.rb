@@ -4,10 +4,19 @@ require "ctags_ruby/tags"
 
 module CtagsRuby
   def self.generate
+    do_tags
+    do_gem_tags
+  end
+
+  private
+
+  def self.do_tags
     tags = Tags.new
-    tags.generate!
+    tags.generate
+  end
+
+  def self.do_gem_tags
     gem_tags = GemTags.new
-    gem_tags.traverse_gemfile!
-    gem_tags.generate!
+    gem_tags.generate
   end
 end

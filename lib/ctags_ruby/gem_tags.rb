@@ -1,20 +1,27 @@
-require 'celluloid'
-
 class GemTags
-  include Celluloid
 
-  attr_reader :paths
   def initialize
   end
 
+  def generate
+    traverse_gemfile
+    system ctags_expression
+  end
+
+  private
+
+  def ctags_expression
+    "ctags -R -f .gemtags #{@paths}"
+  end
+
   def traverse_gemfile
-    if File.exist? './Gemfile'
+    if File.exist? gem_file
       require 'bundler'
       @paths = Bundler.load.specs.map(&:full_gem_path).join(' ')
     end
   end
 
-  def generate
-    system "ctags -R -f .gemtags #{paths}"
+  def gem_file
+    './Gemfile'
   end
 end
