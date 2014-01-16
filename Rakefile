@@ -1,1 +1,6 @@
-require "bundler/gem_tasks"
+require 'bump/tasks'
+require 'bundler/gem_tasks'
+
+task :default do
+  sh "rspec spec/"
+end
