@@ -8,7 +8,7 @@ for the dependencies, based upon you ```Gemfile```
 
 Install it using
 ~~~shell
-    $ gem install ctags_ruby
+gem install ctags_ruby
 ~~~
 
 ## Requirements
