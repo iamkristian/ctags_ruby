@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "ctags_ruby"
   spec.version       = CtagsRuby::VERSION
   spec.authors       = ["Kristian Rasmussen"]
-  spec.email         = ["kr@iamkristian.com"]
+  spec.email         = ["kristian@iamkristian.com"]
   spec.description   = %q{Threaded wrapper for ctags}
   spec.summary       = %q{WIll run ctags in multiple threads on your projec\
   and dependent gems.}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/iamkristian/ctags_ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
