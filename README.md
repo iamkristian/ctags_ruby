@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iamkristian/ctags_ruby.png?branch=master)](https://travis-ci.org/iamkristian/ctags_ruby) [![Code Climate](https://codeclimate.com/github/iamkristian/ctags_ruby.png)](https://codeclimate.com/github/iamkristian/ctags_ruby)
+[![Build Status](https://travis-ci.org/iamkristian/ctags_ruby.png?branch=master)](https://travis-ci.org/iamkristian/ctags_ruby) [![Code Climate](https://codeclimate.com/github/iamkristian/ctags_ruby.png)](https://codeclimate.com/github/iamkristian/ctags_ruby) [![Gem Version](https://badge.fury.io/rb/ctags_ruby.png)](http://badge.fury.io/rb/ctags_ruby)
 # CtagsRuby
 
 Generate ctags files for your ruby project and your projects dependencies.
